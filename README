@@ -1,4 +1,5 @@
-= Test =
+Test
+====
 cd pipes-engine/pipe2py
 git pull
 cd -
@@ -6,7 +7,8 @@ cd -
 google_appengine/dev_appserver.py --use_sqlite pipes-engine 
 
 
-= Deploy =
+Deploy
+======
 cd pipes-engine/pipe2py
 git pull
 cd -
