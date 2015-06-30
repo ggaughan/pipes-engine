@@ -1,0 +1,41 @@
+application: pipes-engine-hrd
+version: 3
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /favicon.ico
+  static_files: images/favicon.ico
+  upload: images/favicon.ico
+
+- url: /run/.*
+  script: main.py
+
+- url: /info/.*
+  script: main.py
+  
+- url: /about
+  script: main.py
+
+- url: /
+  script: main.py
+
+- url: /add
+  script: main.py
+
+- url: /update
+  script: main.py
+
+  
+- url: /.*
+  script: main.py
+  login: required
+
+libraries:
+- name: lxml
+  version: 2.3
+

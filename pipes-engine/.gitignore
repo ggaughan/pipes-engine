@@ -1,0 +1,4 @@
+*.wpu
+*.pyc
+wingdbstub.py
+pipe2py/*

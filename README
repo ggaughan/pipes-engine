@@ -1,0 +1,16 @@
+= Test =
+cd pipes-engine/pipe2py
+git pull
+cd -
+
+google_appengine/dev_appserver.py --use_sqlite pipes-engine 
+
+
+= Deploy =
+cd pipes-engine/pipe2py
+git pull
+cd -
+
+google_appengine/appcfg.py update pipes-engine
+
+
